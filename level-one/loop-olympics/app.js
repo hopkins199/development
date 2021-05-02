@@ -20,9 +20,9 @@ console.log(items)
 for(var i = 0; i < 100; i+=2){
     console.log(i)
 }
-const fruit = ["banana", "orange", "apple", "kiwi", "pear", "peach"]
+const fruit1 = ["banana", "orange", "apple", "kiwi", "pear", "peach"]
     for(var i = 0; i < fruit.length; i++){
         if(i%2 === 0) {
-            console.log(fruit[i])
+            console.log(fruit1[i])
         }
     }

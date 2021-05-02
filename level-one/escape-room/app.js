@@ -19,7 +19,7 @@ while(person.isAlive) {
         break
     }
     else if(play === "find key") {
-        if (count < 6) {
+        if (count < 4) {
             console.log("key not found. keep looking")
             count++
             promptUser()

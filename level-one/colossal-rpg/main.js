@@ -120,6 +120,7 @@ function run() {
     const currentBaddie = baddieSelector()
     if (escape === 1) {
         console.log(`${playerName}, you have escaped!`)
+        explore()
     } else {
         console.log(`${playerName}! ${currentBaddie.enemyName} blocked your ESCAPE!. Now, ${currentBaddie.enemyName} is going to attack! Will you defend yourself?!`)
         attack(currentBaddie)

@@ -1,0 +1,54 @@
+body {
+    background-color: teal;
+}
+#header {
+    text-align: center;
+}
+input {
+    margin-top: 14px;
+}
+#answerAdd{
+    position: absolute;
+    left: 525px;
+    top: 87px;
+}
+#answerSub{
+    position: absolute;
+    left: 534px;
+    top: 163px;
+}
+#answerMul{
+    position: absolute;
+    left: 525px;
+    top: 237px;
+}
+#add1 {
+    display: inline-block;
+    height: 50px;
+    background-color: tomato;
+    margin: auto;
+    width: 50%;
+    border: 3px solid black;
+    padding: 10px;
+
+}
+#sub1 {
+    display: inline-block;
+    height: 50px;
+    background-color: purple;
+    margin: auto;
+    width: 50%;
+    border: 3px solid black;
+    padding: 10px;
+
+}
+#multiply {
+    display: inline-block;
+    height: 50px;
+    background-color: greenyellow;
+    margin: auto;
+    width: 50%;
+    border: 3px solid black;
+    padding: 10px;
+
+}

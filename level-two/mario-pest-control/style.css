@@ -1,0 +1,43 @@
+body{
+    background-image: url("https://live.staticflickr.com/3215/2762008601_8f7f9c2bec_b.jpg");                                         
+}
+header {
+    font-size: 75px;
+    text-align: center;
+    font-family: fantasy;
+    border-bottom: 5px solid red;
+    font-family: 'Super Mario Bros Alphabet', sans-serif;
+}
+div {
+    font-size: 30px;
+    font-family: 'Super Mario Bros Alphabet', sans-serif;
+    padding: 5px;
+}
+#img1 {
+    height: 50px;
+
+}
+#img2 {
+    height: 50px;
+}
+#img3 {
+    height: 50px;
+}
+footer {
+    position:absolute;
+    bottom: 0;
+    width: 100%;
+    background-color:skyblue;
+    text-align: center;
+}
+#thank {
+    color: red;
+    font-family: sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+}
+#finalBill {
+    position: absolute;
+    left: 249px;
+    top: 439px;
+}

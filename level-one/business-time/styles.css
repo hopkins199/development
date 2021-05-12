@@ -1,0 +1,145 @@
+body {
+    background-image: url("https://bbbslubbock.org/wp-content/uploads/2018/10/grey-background-for-site-for-website-1432015867.jpg");
+    text-align: center;
+    color: black;
+}
+#welcome {
+    font-style: bold;
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background-color: #F51743;
+}
+li {
+    display: inline-block;
+    padding: 8px;
+}
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+p {
+    font-size: 28px;
+}
+#dis{
+    color: red;
+    font-style: bold;
+}
+#happy {
+    padding: 15px;
+}
+#news {
+    text-align: left;
+    margin: 20px;
+    background-color: dodgerblue;
+    height: 100px;
+    width: 800px;
+    border: solid black;
+    padding: 2px;
+}
+#news2 {
+    text-align: left;
+    margin: 20px;
+    background-color: rgb(204, 34, 128);
+    height: 100px;
+    width: 800px;
+    border: solid black;
+    padding: 2px;
+}
+#news3 {
+    text-align: left;
+    margin: 20px;
+    background-color: orangered;
+    height: 100px;
+    width: 800px;
+    border: solid black;
+    padding: 2px;
+}
+#news4 {
+    text-align: left;
+    margin: 20px;
+    background-color: yellow;
+    height: 100px;
+    width: 800px;
+    border: solid black;
+    padding: 2px;
+}
+@media only screen and (max-width: 650px) {
+    body {
+        background-color: gray;
+        text-align: center;
+        color: black;
+        font-size: 15px;
+    }
+    #welcome {
+        font-style: bold;
+    }
+    ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        background-color: #F51743;
+    }
+    li {
+        display: inline-block;
+        padding: 8px;
+    }
+    img {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    p {
+        font-size: 18px;
+    }
+    #dis{
+        color: red;
+        font-style: bold;
+    }
+    #happy {
+        padding: 15px;
+    }
+    #news {
+        text-align: left;
+        margin: 20px;
+        background-color: dodgerblue;
+        height: 100px;
+        width: 500px;
+        border: solid black;
+        padding: 2px;
+    }
+    #news2 {
+        text-align: left;
+        margin: 20px;
+        background-color: rgb(204, 34, 128);
+        height: 100px;
+        width: 500px;
+        border: solid black;
+        padding: 2px;
+    }
+    #news3 {
+        text-align: left;
+        margin: 20px;
+        background-color: orangered;
+        height: 100px;
+        width: 500px;
+        border: solid black;
+        padding: 2px;
+    }
+    #news4 {
+        text-align: left;
+        margin: 20px;
+        background-color: yellow;
+        height: 100px;
+        width: 500px;
+        border: solid black;
+        padding: 2px;
+    }
+    #fly {
+        height: 250px;
+        width: 250px;
+    }
+}

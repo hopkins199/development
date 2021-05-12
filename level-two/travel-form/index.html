@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Travel Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Welcome to DC Airlines!</h1>
+    <p>Please fill out this form so we know who you are and junk!</p>
+    <form id="airline-form">
+        <input type="text" name="first-name">
+        <label for="">First Name</label>
+        <br>
+        <input type="text" name="last-name">
+        <label for="">Last Name</label>
+        <br>
+        <input type="number" name="age">
+        <label for="">Age</label>
+        <br>
+        <input type="radio" name="gender" value="male" id="male">
+        <label for="male">Male</label>
+        <br>
+        <input type="radio" name="gender" value="female" id="female">
+        <label for="female">Female</label>
+        <br>
+        <input type="radio" name="gender" value="custom" id="custom">
+        <label for="custom">Custom</label>
+        <br>
+        <select name="travel-location">
+            <option value="atlantis">Atlantis</option>
+            <option value="metropolis">Metropolis</option>
+            <option value="silver City">Silver City</option>
+        </select>
+        <label for="">Where are you going?</label>
+        <br>
+        <input name="diet" value="steak" type="checkbox" placeholder="steak"/>
+        <label for="steak">Steak</label>
+        <br>
+        <input name="diet" value="fish" type="checkbox" placeholder="fish"/>
+        <label for="fish">Fish</label>
+        <br>
+        <input name="diet" value="chicken" type="checkbox" placeholder="chicken"/>
+        <label for="chicken">Chicken</label>
+        <br>
+        <button type="button" id="submit">Submit</button>
+    </form>
+    <script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,114 @@
+{
+    "menu": [
+        {
+        "appetizers": [
+        {
+            "name" : "Nachos",
+            "price": 8,
+            "ingredients": ["chips", "cheese", "pico", "sour cream", "your choice of meat"],
+            "description": "Delicious Nachos that are not too spicy"
+        },
+        {
+            "name" : "Mozerella Sticks",
+            "price": 6,
+            "ingredients": ["mozerella cheese", "breading", "your choice of dipping sauce"],
+            "description": "Hot gooey cheese sticks that everyone loves"
+        },
+        {
+            "name" : "Mini Pizzas",
+            "price": 9,
+            "ingredients": ["mini bagel", "cheese", "sauce", "your choice of topping"],
+            "description": "Mini bagel pizzas that make your mouth water"
+        }
+        ] 
+        },
+        {
+            "cold sandwiches": [
+            {
+                "name" : "Da Clubber",
+                "price": 12,
+                "ingredients": ["bread", "ham", "turkey", "lettuce", "tomato", "your choice of cheese"],
+                "description": "Da Clubber is a classic sandwich that will leave you satisfied"
+            },
+            {
+                "name" : "BLT",
+                "price": 9,
+                "ingredients": ["toasted bread", "bacon", "lettuce", "tomato"],
+                "description": "Simple BLT"
+            },
+            {
+                "name" : "Turkey Bacon Ranch",
+                "price": 11,
+                "ingredients": ["your choice of bread and cheese", "turkey", "bacon", "ranch", "your choice of added veggies"],
+                "description": "You will not be able to put this sandwich down"
+            }
+            ]
+        },
+        {
+            "hot sandwiches": [
+            {
+                "name" : "Classic Meatball",
+                "price": 13,
+                "ingredients": ["hoagie roll", "marinara sauce", "meatballs", "your choice of cheese"],
+                "description": "This Italian Classic is delicous personified"
+            },
+            {
+                "name" : "Grilled Delicious",
+                "price": 12,
+                "ingredients": ["your choice of bread", "your choice of meat", "your choice of cheese"],
+                "description": "This is a make your own grilled cheese with meat in it"
+            },
+            {
+                "name" : "Turkey ala King",
+                "price": 11,
+                "ingredients": ["your choice of bread and cheese", "turkey", "bacon", "your choice of added veggies"],
+                "description": "This is the King of hot sandwiches"
+            }
+            ]
+        },
+        {
+            "desserts": [
+            {
+                "name" : "Big A$$ Cookie",
+                "price": 12,
+                "ingredients": ["vanilla ice cream", "giant cookie", "hot fudge"],
+                "description": "Piping hot fresh cookie served with ice cream and hot fudge, mmmm."
+            },
+            {
+                "name" : "Cherry Swirl Cheesecake",
+                "price": 12,
+                "ingredients": ["cheesecake", "cherry swirl toppping", "whipped cream"],
+                "description": "Classic New York Cheesecake with a delicous cherry swirl and whip cream on top"
+            },
+            {
+                "name" : "Milk Shakes",
+                "price": 9,
+                "ingredients": ["your choice of chocolate vanilla or strawberry", "whip cream"],
+                "description": "This should coome with a stick, because our shakes bring all the customers to the yard"
+            }
+            ]
+        },
+        {
+            "drinks": [
+            {
+                "name" : "Pina Colada",
+                "price": 12,
+                "ingredients": ["white rum", "pineapple juice", "coconut cream"],
+                "description": "Enjoy tropical paradise in a glass with our delicous Pina Colada"
+            },
+            {
+                "name" : "Cuba Libre",
+                "price": 11,
+                "ingredients": ["rum", "coke", "lime wedge"],
+                "description": "Time to unwind with a Cuba Libre"
+            },
+            {
+                "name" : "Johnny Silverhand",
+                "price": 14,
+                "ingredients": ["tequila", "agave nectar", "Angostura bitters", "Orange twist", "Chili pepper", "your choice of mexican beer"],
+                "description": "Kick it Samuari Style with Johnny Silverhand"
+            }
+            ]
+        }
+    ]
+}    

@@ -1,0 +1,131 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: gray;
+    min-width: 100vw;
+  }
+  .headrr {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 150px;
+    width: 100vw;
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,121,120,1) 35%, rgba(0,212,255,1) 100%);
+    border-bottom: 1px solid black;
+  }
+  .title {
+    font-size: 40px;
+    font-weight: bold;
+    font-family: "Noto Sans TC", sans-serif;
+  }
+  
+  main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,107,121,1) 35%, rgba(0,212,255,1) 100%);
+    padding: 40px 0 40px 0;
+    min-height: 100vh;
+  }
+  
+  .form-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f4f4f4;
+    height: fit-content;
+    min-height: fit-content;
+    width: 720px;
+    border: 2px solid black;
+    border-radius: 6px;
+    padding: 40px 10px;
+  }
+  /* .results-container */
+  
+  /* .results-container */
+  
+  .btn-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .form-input {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: space-evenly;
+    column-gap: 55px;
+    height: 28px;
+    border-radius: 8px;
+  }
+  
+  textarea {
+    height: 80px;
+    min-width: 100%;
+    max-width: 100%;
+    border-radius: 8px;
+    padding: 5px;
+  }
+  .inputs {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+.btn{
+    height: 35px;
+    width: auto;
+    font-size: 20px;
+    padding: 1px;
+}  
+.results-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #f4f4f4;
+    height: fit-content;
+    min-height: fit-content;
+    max-height: fit-content;
+    width: 720px;
+    border: 2px solid black;
+    border-radius: 6px;
+    padding: 40px 10px;
+    margin-top: 25px;
+  }
+  .badge{
+    font-size: 18px;
+    font-weight: normal;
+    color: black;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-evenly;
+  }
+  .form-results {
+    height: fit-content;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    max-height: fit-content;
+    min-width: 660px;
+    max-width: 700px;
+    border-radius: 8px;
+  }
+.name-res, .emizzle, .foobizzle, .descripizzle {
+  display: flex;
+  flex-direction: row;
+}
+.emizzle{
+  display: flex;
+  justify-content: space-between;
+}
+.foobizzle{
+  display: flex;
+  justify-content: space-between;
+}

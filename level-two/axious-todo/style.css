@@ -1,0 +1,77 @@
+body {
+    background-color: dimgrey;
+    margin: 0;
+}
+
+#headrr {
+    color: whitesmoke;
+    font-size: 55px;
+    text-align: center;
+    font-weight: bold;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    padding: 20px;
+}
+#formish {
+    display: block;
+    text-align: center;
+    border-collapse: separate;
+    padding: 10px;
+}
+input, button {
+    -moz-border-radius: 6px;
+    -webkit-border-radius: 6px;
+    -khtml-border-radius: 6px;
+    border-radius:6px;
+}
+#todo-list {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 0 75px;
+    margin: 0;
+}
+#title {
+    color: coral;
+}
+#description {
+    color: cyan;
+}
+#price {
+    color: deeppink;
+}
+img {
+    max-height: 300px;
+    max-width: 300px;
+    display: flex;
+    margin-left: 50px;
+}
+.conatiner {
+    display: flex;
+    flex-direction: row;
+    max-height: 300px;
+    width: 40vw;
+    margin: 20px auto;
+    padding: 25px;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #121212;
+    border-radius: 8px;
+    background-image: linear-gradient(36deg, #360f40 0%, #72afd3 100%);
+}
+
+.conatiner:hover {
+    box-shadow: 8px 8px 8px darkslategray;
+}
+
+.infoContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+button {
+    color: white;
+    background-color: darkorange;
+}
+input {
+    background-color: lightgrey;
+}

@@ -1,0 +1,67 @@
+*{
+    margin: 0;
+    font-family: 'Open Sans Condensed', sans-serif;
+}
+body{
+    background-color: darkgray;
+}
+.headrr{
+    height: 100px;
+    width: 100vw;
+    background-color: black;
+    display: flex;
+    flex-direction: row;
+}
+.title{
+    color: crimson;
+    font-size: 35px;
+    display: flex;
+    align-items: center;
+    margin-left: 20px;
+}
+.head-img{
+    max-height: 100px;
+    max-width: auto;
+}
+.center-it{
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+}
+.container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 80vw;
+    align-items: center;
+}
+.hit-box{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+.cards{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-height: 500px;
+    max-width: 3000px;
+    margin: 20px 20px 20px 20px;
+}
+.hit-img{
+    height: 300px;
+    width: 300px;
+}
+.target{
+    height: 20px;
+    width: 300px;
+    background-color: darkblue;
+    color: white;
+    font-size: 1.2em;
+    padding: 0;
+    padding-bottom: 10px;
+    text-align: center;
+}

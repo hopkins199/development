@@ -1,0 +1,44 @@
+body{
+    margin: 0;
+    background-color: darkgray;
+    font-family: 'Alfa Slab One', cursive;
+    background-image: url("https://www.thesprucecrafts.com/thmb/vUPGx6rNU1Jp4UNL_LjVJzxPHr8=/1500x1000/filters:fill(auto,1)/dice-probabilities-rolling-2-sixsided-dice-411406_hero_3220-4c2f1909efb84327bd236c34e7610364.jpg");
+    background-size: cover;
+}
+.main-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.dice-container{
+    display: flex;
+    flex-direction: row;
+}
+.title {
+    font-size: 75px;
+    text-align: center;
+    font-family: 'Casino Shadow', sans-serif;
+}
+.die {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+    background-color: whitesmoke;
+    border: .5px solid black;
+    height: 50px;
+    width: 50px;
+    margin: 5px;
+    border-radius: 5px;
+}
+.rollEm {
+    margin-top: 30px;
+    height: 100px;
+    width: 100px;
+    background-color: dimgray;
+    color: whitesmoke;
+    font-weight: bold;
+    border-radius: 5px;
+    box-shadow: 6px 6px 6px black;
+}

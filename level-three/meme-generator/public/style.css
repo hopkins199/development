@@ -1,0 +1,81 @@
+body{
+    margin: 0;
+    background-color: lightgrey;
+}
+.meme-container{
+    display: flex;
+    justify-content: center;
+    background-color: deepskyblue;
+}
+.meme-box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+    width: 80vw;
+    border: 2px solid black;
+    border-radius: 8px;
+    background-color: cornflowerblue;
+}
+.title{
+    font-size: 27px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.maker-box{
+    display: flex;
+    height: 60vh;
+    width: 60vw;
+    border: 2px solid black;
+    border-radius: 8px;
+}
+.meme-image{
+    border: 1px solid black;
+    border-radius: 6px;
+}
+.buttons{
+    display: flex;
+    flex-direction: row;
+    background-color: mediumblue;
+    color: whitesmoke;
+    border-radius: 6px; 
+}
+.refresh{
+    height: 30px;
+    width: 250px;
+    background-color: mediumblue;
+    color: whitesmoke;
+    border-radius: 6px;
+}
+.image-box{
+    display: flex;
+    flex-direction: column;
+}
+.save{
+    height: 30px;
+    width: 250px;
+    background-color: mediumblue;
+    color: whitesmoke;
+    border-radius: 6px; 
+}
+.upper-text{
+    position: absolute;
+    top: 5px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.lower-text{
+    position: absolute;
+    bottom: 0px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin: 0;
+}
+.meme-container{
+    position: relative;
+}
+input{
+    line-height: 24px;
+}

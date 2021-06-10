@@ -1,0 +1,77 @@
+body {
+    margin: 0;
+    background-color: darkgray;
+    font-family: 'Shadows Into Light', cursive;
+    background-image: url("https://wallpapercave.com/wp/wp2343900.png");
+}
+.headrr {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 200px;
+    width: 100%;
+    border-bottom: 5px solid black;
+    background-image: url("https://wallpapercave.com/wp/wp2343900.png");
+    position: relative;
+}
+.image-overlay {
+    height: 200px;
+    width: 100%;
+    background: grey;
+    opacity: .2;
+    position: absolute;
+}
+.title {
+    font-size: 70px;
+    padding: 0;
+    margin-bottom: 5px;
+}
+.sub-title {
+    font-size: 18px;
+    padding: 0;
+}
+.rainbow-text {
+    background-image: linear-gradient(to left, violet, indigo, blue, green, yellow, orange, red);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+.dj-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+.box-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+    column-gap: 15px;
+    max-width: 430px;
+}
+.box {
+    height: 200px;
+    width: 200px;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+.button-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    max-width: 430px;
+    margin-top: 20px;
+}
+
+.btn {
+    width: 200px;
+    height:35px;
+    padding: 0;
+    margin: 0;
+    border-radius: 5px;
+}
+.left {
+    margin-right: 15px;
+}

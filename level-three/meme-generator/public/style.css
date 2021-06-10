@@ -1,72 +1,18 @@
 body{
-    margin: 0;
-    background-color: lightgrey;
-}
-.meme-container{
-    display: flex;
-    justify-content: center;
-    background-color: deepskyblue;
-}
-.meme-box{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 80vh;
-    width: 80vw;
-    border: 2px solid black;
-    border-radius: 8px;
-    background-color: cornflowerblue;
-}
-.title{
-    font-size: 27px;
+    background: rgb(74,73,79);
+    background: linear-gradient(90deg, rgba(74,73,79,1) 0%, rgba(89,98,122,1) 21%, rgba(64,76,99,1) 57%, rgba(210,212,236,1) 100%);
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    text-align: center;
-    margin-bottom: 20px;
+    color: white;
+    text-shadow: 1px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000;
+    font-weight: normal;
 }
-.maker-box{
-    display: flex;
-    height: 60vh;
-    width: 60vw;
-    border: 2px solid black;
-    border-radius: 8px;
-}
-.meme-image{
-    border: 1px solid black;
-    border-radius: 6px;
-}
-.buttons{
-    display: flex;
-    flex-direction: row;
-    background-color: mediumblue;
-    color: whitesmoke;
-    border-radius: 6px; 
-}
-.refresh{
-    height: 30px;
-    width: 250px;
-    background-color: mediumblue;
-    color: whitesmoke;
-    border-radius: 6px;
-}
-.image-box{
-    display: flex;
-    flex-direction: column;
-}
-.save{
-    height: 30px;
-    width: 250px;
-    background-color: mediumblue;
-    color: whitesmoke;
-    border-radius: 6px; 
-}
-.upper-text{
+.upper{
     position: absolute;
     top: 5px;
     left: 50%;
     transform: translate(-50%, -50%);
 }
-.lower-text{
+.lower{
     position: absolute;
     bottom: 0px;
     left: 50%;
@@ -75,7 +21,58 @@ body{
 }
 .meme-container{
     position: relative;
+    display: flex;
+    justify-content: center;
+}
+.outer-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.refresh-div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 input{
-    line-height: 24px;
+    border-radius: 5px;
+}
+.button{
+    height: 25px;
+    width: 100px;
+    border-radius: 5px;
+}
+.img{
+    border: 1px solid black;
+    border-radius: 5px;
+}
+.save-upper{
+    position: absolute;
+    top: 5px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.save-lower{
+    position: absolute;
+    bottom: 0px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin: 0;
+}
+.save-container{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+.save-outer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.save-input{
+    display: flex;
+    flex-direction: row;
 }

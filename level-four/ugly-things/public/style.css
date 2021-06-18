@@ -1,0 +1,33 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: burlywood;
+}
+.form-container{
+    display: flex;
+    justify-content: center;
+    background-color: cadetblue;
+}
+.form-inner{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    width: 60vw;
+}
+.ugly-list{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+.ugly-item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.button{
+    height: auto;
+    width: 60px;
+    background: chartreuse;
+}

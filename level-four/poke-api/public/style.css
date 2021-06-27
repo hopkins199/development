@@ -1,0 +1,218 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Silkscreen', sans-serif;
+    font-weight: lighter;
+}
+@media screen and (min-width: 1100px) {
+    .header-con{
+        display: flex;
+        height: 250px;
+        width: 100vw;
+        background-color: #0c1c3e;
+        justify-content: center;
+        color: whitesmoke;
+    }
+    .header-inner{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    h1 {
+        font-size: 65px;
+        margin-top: 20px;
+    }
+    .nav-bar{
+        display: flex;
+        flex-direction: row;
+        justify-content: end;
+        width: 100vw;
+        height: 250px;
+        position: relative;
+    }
+    .nav-inner{
+        display: flex;
+        flex-direction: row;
+        justify-content: end;
+        position: absolute;
+        right: 10px;
+        bottom: 10px;
+    }
+    .nav-item{
+        margin-right: 20px;
+        font-size: 25px;
+        color: whitesmoke;
+    }
+    .logo{
+        margin-left: 25px;
+    }
+    .list-div{
+        display: flex;
+        justify-content: center;
+        margin-top: 10px;
+    }
+    .list-inner{
+        display: flex;
+        width: 100vw;
+        flex-wrap: wrap;
+        justify-content: center;
+    
+    }
+    .home-outer{
+        display: flex;
+        justify-content: center;
+        text-align: center;
+    }
+    .rando{
+        font-size: 35px;
+        margin-top: 50px;
+    }
+    .home-pokemon{
+        margin-top: 20px;
+    }
+    .search-outer{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        margin-top: 50px;
+    }
+    .rando-poke{
+        margin-top: 25px;
+    }
+    .sub-head{
+        text-align: center;
+    }
+    .results{
+        font-size: 1.5em;
+    }
+    .search-mon{
+        margin-top: 20px;
+    }
+    .search-title{
+        margin-bottom: 20px;
+    }
+}
+@media screen and (max-width: 1099px) and (min-width: 600px){
+
+    .nav-item{
+        margin-right: 20px;
+        font-size: 15px;
+        color: whitesmoke;
+    }
+    .img {
+        height: 250px;
+        width: 250px;
+    }
+    .list-div{
+        display: flex;
+        justify-content: center;
+    }
+    .nav-item{
+        margin-right: 10px;
+    }
+    .header-con{
+        display: flex;
+        height: 150px;
+        width: 100vw;
+        background-color: #0c1c3e;
+        justify-content: center;
+        color: whitesmoke;
+    }
+    .header-inner{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .search-outer{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        margin-top: 50px;
+    }
+    .rando-poke{
+        margin-top: 25px;
+    }
+    .sub-head{
+        text-align: center;
+    }
+    .results{
+        font-size: 1.5em;
+    }
+    .search-mon{
+        margin-top: 20px;
+    }
+    .search-title{
+        margin-bottom: 20px;
+    }
+}
+@media screen and (max-width: 599px){
+    .nav-item{
+        margin-right: 10px;
+        font-size: 15px;
+        color: whitesmoke;
+    }
+    .logo{
+        height: 80px;
+        width: 180px;
+    }
+    .list-div{
+        display: flex;
+        justify-content: center;
+    }
+    .header-con{
+        display: flex;
+        height: 150px;
+        width: 100vw;
+        background-color: #0c1c3e;
+        justify-content: center;
+        color: whitesmoke;
+    }
+    .header-inner{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .search-outer{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        margin-top: 50px;
+    }
+    .rando-poke{
+        margin-top: 25px;
+    }
+    .sub-head{
+        text-align: center;
+    }
+    .results{
+        font-size: 1.5em;
+    }
+    .search-mon{
+        margin-top: 20px;
+    }
+    .search-title{
+        margin-bottom: 20px;
+    }
+    img{
+        height: 200px;
+        width: 200px;
+    }
+    .home-outer{
+        display: flex;
+        justify-content: center;
+        text-align: center;
+    }
+    .rando{
+        font-size: 25px;
+        margin-top: 50px;
+    }
+    .home-pokemon{
+        margin-top: 20px;
+    }
+}

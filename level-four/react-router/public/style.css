@@ -1,0 +1,71 @@
+@import url(//db.onlinewebfonts.com/c/6c02f15fdbc9dd7c482b52b06d8e0a6c?family=Super+Mario+256);
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: "Super Mario 256"; src: url("//db.onlinewebfonts.com/t/6c02f15fdbc9dd7c482b52b06d8e0a6c.eot"); src: url("//db.onlinewebfonts.com/t/6c02f15fdbc9dd7c482b52b06d8e0a6c.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/6c02f15fdbc9dd7c482b52b06d8e0a6c.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/6c02f15fdbc9dd7c482b52b06d8e0a6c.woff") format("woff"), url("//db.onlinewebfonts.com/t/6c02f15fdbc9dd7c482b52b06d8e0a6c.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/6c02f15fdbc9dd7c482b52b06d8e0a6c.svg#Super Mario 256") format("svg")
+}
+.nav-div{
+    display: flex;
+    justify-content: center;
+    height: 200px;
+    width: 100vw;
+    background-image: url("https://png.pngtree.com/thumb_back/fw800/back_pic/00/06/34/7956298ae43266e.jpg");
+    background-size: cover;
+    background-color: aqua;
+}
+.nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100vw;
+}
+.nav-item{
+    display: flex;
+    justify-content: space-evenly;
+    font-size: 35px;
+}
+.footer-con{
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    height: 120px;
+    width: 100vw;
+    background: cyan;
+    justify-content: center;
+    text-align: center;
+    background-image: url("https://i.pinimg.com/originals/31/0d/4a/310d4a2f36b4fe4a07a31f5f7759a4d3.jpg");
+}
+.footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.main-page{
+    text-align: center;
+    background-color: cyan;
+    height: 65vh;
+    width: 100vw;
+    padding: 10px;
+    background-image: url("https://i.pinimg.com/originals/31/0d/4a/310d4a2f36b4fe4a07a31f5f7759a4d3.jpg");
+}
+h1{
+    padding: 0;
+}
+.services{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 64vh;
+    padding: 10px;
+    width: 100vw;
+    background-image: url("https://i.pinimg.com/originals/31/0d/4a/310d4a2f36b4fe4a07a31f5f7759a4d3.jpg");
+}
+li{
+    margin-bottom: 25px;
+    font-size: 25px;
+    text-decoration: underline;
+    color: red;
+}

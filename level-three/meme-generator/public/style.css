@@ -76,3 +76,23 @@ input{
     display: flex;
     flex-direction: row;
 }
+.header{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+.head-inner {
+    display: flex;
+    justify-content: center;
+    height: 150px;
+    width: 100vw;
+    align-items: center;
+    margin-bottom: 25px;
+}
+.title {
+    font-size: 3.5em;
+}
+.subtitle {
+    font-size: 1.5em;
+}

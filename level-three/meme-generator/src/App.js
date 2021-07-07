@@ -2,6 +2,7 @@ import React from "react"
 import axios from "axios"
 import Meme from "./Meme"
 import SavedMeme from './SavedMeme'
+import Header from "./Header"
 
 class App extends React.Component{
     constructor() {
@@ -90,6 +91,7 @@ class App extends React.Component{
         
         return(
             <main>
+                <Header />
                 <div>
                     {randomMeme}
                     <div className="refresh-div">

@@ -11,6 +11,9 @@
     background-color: white;
     z-index: 1;
 }
+.product:hover {
+    box-shadow: 8px 5px 5px 5px lightgray;
+}
 .product > img {
     max-height: 200px;
     width: 100%;

@@ -15,10 +15,10 @@ function Home() {
         <div className="home__row">
           <Product
             id="12321341"
-            title="The Lean Startup: How Constant Innovation Creates Radically Successful Businesses Paperback"
-            price={11.96}
+            title="Player's Handbook (Dungeons & Dragons) Hardcover – Illustrated"
+            price={31.30}
             rating={5}
-            image="https://images-na.ssl-images-amazon.com/images/I/51Zymoq7UnL._SX325_BO1,204,203,200_.jpg"
+            image="https://images-na.ssl-images-amazon.com/images/I/51k3peix3BL._SX378_BO1,204,203,200_.jpg"
           />
           <Product
             id="49538094"
@@ -27,15 +27,22 @@ function Home() {
             rating={4}
             image="https://images-na.ssl-images-amazon.com/images/I/81O%2BGNdkzKL._AC_SX450_.jpg"
           />
+          <Product
+            id="452544256"
+            title="Bestway SaluSpa 71 inch x 26 inch Helsinki AirJet Inflatable Hot Tub"
+            price={599.99}
+            rating={4}
+            image="https://m.media-amazon.com/images/I/912Rg99gvUL._AC_SS450_.jpg"
+          />
         </div>
 
         <div className="home__row">
           <Product
             id="4903850"
-            title="Fitbit Charge 4 Fitness and Activity Tracker with Built-in GPS, Heart Rate, Sleep & Swim Tracking"
-            price={199.99}
-            rating={3}
-            image="https://images-na.ssl-images-amazon.com/images/I/71Swqqe7XAL._AC_SX466_.jpg"
+            title="Amazon Halo Band – Measure how you move, sleep, and sound"
+            price={99.99}
+            rating={4}
+            image="https://images-na.ssl-images-amazon.com/images/I/616EXCFdv-L._SS400_.jpg"
           />
           <Product
             id="23445930"
@@ -51,6 +58,13 @@ function Home() {
             rating={4}
             image="https://images-na.ssl-images-amazon.com/images/I/816ctt5WV5L._AC_SX385_.jpg"
           />
+          <Product
+            id="25256574258"
+            title="Xbox Series X - the fastest and mot powerful Xbox ever"
+            price={499.99}
+            rating={4}
+            image="https://images-na.ssl-images-amazon.com/images/I/41OH7dLwaJL._SX522_.jpg"
+          />
         </div>
 
         <div className="home__row">
@@ -60,6 +74,13 @@ function Home() {
             price={1094.98}
             rating={4}
             image="https://images-na.ssl-images-amazon.com/images/I/6125mFrzr6L._AC_SX355_.jpg"
+          />
+          <Product
+            id="9024525655"
+            title="Alienware m17 R3 17.3 inch FHD Gaming Laptop (Luna Light) Intel Core i7-10750H 10th Gen, 16GB DDR4 RAM, 1TB SSD, Nvidia Geforce RTX 2070 8GB GDDR6, Windows 10 Home"
+            price={2159.00}
+            rating={4}
+            image="https://images-na.ssl-images-amazon.com/images/I/71hhY4ikVwL._AC_SL1500_.jpg"
           />
         </div>
       </div>

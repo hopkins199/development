@@ -120,6 +120,9 @@ h2 {
     margin: 10px;
     background-color: white;
 }
+.project-card:hover {
+    box-shadow: 8px 5px 5px darkgrey;
+}
 .project-container {
     display: flex;
     justify-content: space-around;

@@ -1,0 +1,39 @@
+* {
+    margin: 0;
+}
+
+.header {
+    height: 150px;
+    width: 100vw;
+    background-color: slategray;
+    padding: 0;
+    margin: 0;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+h1 {
+    font-size: 70px;
+}
+.header_title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.header_link {
+    position: absolute;
+    top: 100px;
+    right: 10px;
+    font-size: 30px;
+}
+.header_link > a {
+    margin-right: 10px;
+    text-decoration: none;
+    color: black;
+}
+img {
+    height: 130px;
+    width: auto;
+    position: absolute;
+    left: 10px;
+}

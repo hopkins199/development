@@ -31,7 +31,7 @@ h1 {
     text-decoration: none;
     color: black;
 }
-img {
+.header > img {
     height: 130px;
     width: auto;
     position: absolute;

@@ -1,0 +1,20 @@
+.home {
+    display: flex;
+    justify-content: space-between;
+    width: 80vw;
+    margin-top: 20px;
+}
+.home_info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 40%;
+    margin-left: 20%;
+    margin-right: 0;
+    font-size: 1.5em;
+    line-height: 2.5;
+    text-align: center;
+}
+.watto {
+    border-radius: 12px;
+}

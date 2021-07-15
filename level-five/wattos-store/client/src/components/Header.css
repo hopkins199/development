@@ -6,11 +6,16 @@
     height: 150px;
     width: 100vw;
     background-color: slategray;
+    background-image: url('https://www.filmquest.co/image/hero-middle/uploads/main-images/mos-espa-1_1.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-y: -300px;
     padding: 0;
     margin: 0;
     align-items: center;
     justify-content: center;
     display: flex;
+    color: white;
 }
 h1 {
     font-size: 70px;
@@ -29,9 +34,9 @@ h1 {
 .header_link > a {
     margin-right: 10px;
     text-decoration: none;
-    color: black;
+    color: white;
 }
-.header > img {
+.watto_header {
     height: 130px;
     width: auto;
     position: absolute;

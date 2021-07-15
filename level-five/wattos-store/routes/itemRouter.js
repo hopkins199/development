@@ -27,6 +27,17 @@ itemRouter.post('/', (req, res, next) => {
     })
 })
 
+// Get by type
+itemRouter.get('/search/type', (req, res, next) => {
+    Item.find({type: req.query.type}, (err, items) => {
+        if(err){
+            res.status(500)
+            return next(err)
+        }
+        return res.send(items)
+    })
+})
+
 //edit one
 itemRouter.put('/:itemId', (req, res, next) => {
     Item.findByIdAndUpdate(

@@ -14,3 +14,17 @@
 h2 {
     text-align: center;
 }
+.inventory_title {
+    font-size: 2.5rem;
+}
+.inventory_filter {
+    font-size: 1.5rem;
+    margin-left: 20px;
+    margin-bottom: 10px;
+}
+.filter_form {
+    padding: 10px;
+    width: 175px;
+    font-size: 18px;
+    font-family: 'Love Ya Like A Sister', cursive;
+}

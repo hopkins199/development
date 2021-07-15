@@ -1,8 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Mukta:wght@200;300;400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Love+Ya+Like+A+Sister&family=Nanum+Brush+Script&display=swap');
 
 body {
   margin: 0;
   padding: 0;
   background-color: whitesmoke;
-  font-family: 'Mukta', sans-serif;
+  /* font-family: 'Mukta', sans-serif; */
+  font-family: 'Love Ya Like A Sister', cursive;
 }

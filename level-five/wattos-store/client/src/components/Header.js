@@ -1,16 +1,17 @@
 import './Header.css'
-// import watto from './WattoHS.jpg'
+import {Link} from 'react-router-dom'
 
-function Header() {
+
+function Header(props) {
     return(
         <div className='header'>
             <div className='header_title'>
                 <h1>Watto's Junkyard</h1>
             </div>
             <div className='header_link'>
-                <a href='/'>Home</a>
-                <a href='/inventory'>Inventory</a>
-                <a href='/cart'>Cart</a>
+                <Link to={`/`}>Home</Link>
+                <Link to={`/${props.path2}`}>Inventory</Link>
+                <Link to={`/${props.path3}`}><p className='cart_icon'>🛒</p></Link>
             </div>
             {/* <img src={watto} alt='' className='watto_header' /> */}
         </div>

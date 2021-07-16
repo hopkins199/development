@@ -1,23 +1,17 @@
 import './Items.css'
-import { useStateValue } from './StateProvider'
-import React from 'react'
+import React, { useContext } from 'react'
+import { ShoppingCartContext } from '../context/ShoppingCartContext'
+
 
 export default function Items(props){
     const { name, description, price, imgURL, type, _id } = props
-    const [dispatch] = useStateValue()
+    const {cart, setCart} = useContext(ShoppingCartContext)
 
-    function addToCart() {
-        dispatch({
-            type: 'ADD_TO_BASKET',
-            item: {
-                _id: _id,
-                name: name,
-                description: description,
-                price: price,
-                imgURL: imgURL,
-                type: type,
-            },
-        })
+
+    function addToCart(e) {
+        e.preventDefault()
+        setCart(prevState => [...prevState, {name: name, description: description, price: price, imgURL: imgURL, type: type, _id: _id }])
+        console.log(cart)
     }
 
     return(
@@ -32,7 +26,6 @@ export default function Items(props){
                 <button onClick={addToCart}>Add to Cart</button>
                 <img src={imgURL} alt='' className='item_image'/>
             </div>
-            
         </div>
     )
 }

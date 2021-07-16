@@ -4,7 +4,7 @@
 body {
   margin: 0;
   padding: 0;
-  background-color: whitesmoke;
+  background-color: rgba(211, 211, 211, 0.5);
   /* font-family: 'Mukta', sans-serif; */
   font-family: 'Love Ya Like A Sister', cursive;
 }

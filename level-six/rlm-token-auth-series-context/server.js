@@ -9,7 +9,7 @@ app.use(express.json())
 app.use(morgan('dev'))
 
 mongoose.connect(
-  'mongodb+srv://hopkins199:SvJ7Sv7SlGMtQ8Wm@cluster0.idyh5.mongodb.net/user-authentication?retryWrites=true&w=majority',
+  'mongodb+srv://hopkins199:KZtsVoyBosissbld@cluster0.idyh5.mongodb.net/user-authentication?retryWrites=true&w=majority',
   {
     useNewUrlParser: true,
     useUnifiedTopology: true,

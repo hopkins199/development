@@ -9,7 +9,7 @@ const expressJwt = require('express-jwt')
 app.use(express.json())
 app.use(morgan('dev'))
 
-mongoose.connect('mongodb+srv://hopkins199:zTbSyC3EZ2tfOudk@cluster0.idyh5.mongodb.net/rvtDB?retryWrites=true&w=majority',
+mongoose.connect('mongodb+srv://hopkins199:6uhdrZaOG7MUPr9L@cluster0.idyh5.mongodb.net/rtvDB?retryWrites=true&w=majority',
     {
         useNewUrlParser: true,
         useUnifiedTopology: true,
@@ -21,7 +21,10 @@ mongoose.connect('mongodb+srv://hopkins199:zTbSyC3EZ2tfOudk@cluster0.idyh5.mongo
 
 app.use('/auth', require('./routes/authRouter.js'))
 app.use('/api', expressJwt({ secret: process.env.SECRET, algorithms: ['shal1', 'RS256', 'HS256']}))
+app.use('/api/issues/authors', require('./routes/authorRouter.js'))
 app.use('/api/issues', require('./routes/issueRouter.js'))
+app.use('/api/issues/comments/', require('./routes/commentRouter'))
+
 
 app.use((err, req, res, next) => {
     console.log(err)
@@ -32,6 +35,6 @@ app.use((err, req, res, next) => {
 })
 
 
-app.listen(9000, () => {
+app.listen(8000, () => {
     console.log('Server is running on local port 9000')
 })

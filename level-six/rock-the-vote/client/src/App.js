@@ -1,12 +1,35 @@
-import React from "react"
+import React, { useContext } from 'react'
+import { Switch, Route, Redirect } from 'react-router-dom'
+import Navbar from './components/Navbar.js'
+import Login from './components/Login.js'
+import Profile from './components/Profile.js'
+import Public from './components/Public.js'
+import { UserContext } from './context/UserProvider.js'
+import ProtectedRoute from './components/ProtectedRoute.js'
 
 export default function App(){
-
-
-
-    return(
-        <div>
-
-        </div>
-    )
+  const { token, logout } = useContext(UserContext)
+  return (
+    <div className="app">
+      { token && <Navbar logout={logout} /> }
+      <Switch>
+        <Route 
+          exact path="/" 
+          render={()=> token ? <Redirect to="/profile" /> : <Login />}
+        />
+        <ProtectedRoute 
+          path="/profile"
+          component={Profile}
+          redirectTo='/'
+          token={token}
+        />
+        <ProtectedRoute 
+          path="/public"
+          component={Public}
+          redirectTo='/'
+          token={token}
+        />
+      </Switch>
+    </div>
+  )
 }

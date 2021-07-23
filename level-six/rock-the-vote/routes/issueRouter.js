@@ -57,7 +57,7 @@ issueRouter.put('/:issueId', (req, res, next) => {
     Issue.findOneAndUpdate(
         { _id: req.params.issueId, user: req.user._id },
         req.body,
-        {vnew: true },
+        {new: true },
         (err, updatedIssue) => {
             if(err){
                 res.status(500)

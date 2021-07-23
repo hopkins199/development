@@ -1,0 +1,214 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	font-size: 16px;
+	font-family: sans-serif;
+	outline: none;
+	text-decoration: none;
+	background-color: lightgray;
+}
+
+.app {
+	background-color: #eee9;
+}
+
+.navbar {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	height: 40px;
+	background-color: #00264d;
+}
+
+.nav-link {
+	background-color: #00264d;
+	color: whitesmoke;
+	border: none;
+}
+
+.login-container {
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	height: 100vh;
+}
+
+.login-container > h1 {
+	font-size: 2em;
+	margin: 24px;
+}
+
+.login-container > p {
+	margin: 16px;
+	text-decoration: underline;
+}
+
+.login-container > form {
+	border: 1px solid #3339;
+	padding: 20px;
+	border-radius: 5px;
+	background-color: #aaa9;
+
+	display: flex;
+	flex-direction: column;
+}
+
+.login-container > form > input {
+	margin: 16px 8px;
+	padding: 8px;
+	border-radius: 4px;
+	background-color: whitesmoke;
+}
+
+.login-container > form > button {
+	margin: 16px 8px;
+	padding: 8px;
+	border-radius: 4px;
+	background-color: #00264d;
+	color: whitesmoke;
+}
+
+.login-btn:disabled {
+	background-color: #aaa9;
+	border: none;
+	text-decoration: line-through;
+}
+
+.question {
+	background-color: transparent;
+}
+
+.public {
+	height: 100vh;
+}
+
+.profile {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	height: 100vh;
+}
+
+.profile > h1 {
+	margin: 8px;
+	font-size: 2em;
+	text-align: center;
+}
+
+.profile > h3 {
+	margin: 16px 0;
+	text-decoration: underline;
+}
+
+.profile > form {
+	display: flex;
+	flex-direction: column;
+	margin: 16px 0;
+	border: 1px solid #3339;
+	background-color: #aaa9;
+	padding: 16px;
+	border-radius: 5px;
+}
+
+.profile > form > input {
+	background-color: whitesmoke;
+}
+
+.profile > form > button {
+	background-color: #00264d;
+	color: whitesmoke;
+}
+
+.profile > form > input,
+.profile > form > button {
+	margin: 8px 0;
+	padding: 8px;
+	border-radius: 5px;
+}
+
+.profile > form > textarea {
+	background-color: whitesmoke;
+	padding: 5px;
+	border-radius: 5px;
+	resize: none;
+}
+.issue {
+	font-size: 1.5rem;
+	margin-top: 10px;
+	padding: 10px;
+	border: 1px solid #3339;
+	border-radius: 5px;
+	background-color: whitesmoke;
+	width: 60vw;
+}
+.issue > h1,
+p {
+	margin-bottom: 10px;
+	background-color: whitesmoke;
+}
+.issue > h3 {
+	background-color: whitesmoke;
+}
+.public-title {
+	font-size: 25px;
+	padding-top: 20px;
+	text-align: center;
+}
+
+.public {
+	display: flex;
+	flex-direction: column;
+}
+
+.public-inner {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.post-actions {
+	display: flex;
+	flex-direction: row;
+	background-color: transparent;
+  margin-top: 10px;
+}
+
+.post-actions > p {
+	margin-right: 20px;
+	margin-top: 10px;
+	font-size: 13px;
+}
+.comment-btn {
+  background-color: #00264d;
+  color: whitesmoke;
+  padding: 2px;
+  border-radius: 5px;
+}
+.insert-comment {
+  background-color: whitesmoke;
+  margin-right: 10px;
+  color: black;
+  padding: 5px;
+  resize: none;
+  border-radius: 5px;
+}
+.comment-form {
+  background-color:whitesmoke;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+.comment {
+  background-color: transparent;
+  padding-right: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.comment-container {
+  background-color: transparent;
+  display: flex;
+  flex-direction: column;
+}

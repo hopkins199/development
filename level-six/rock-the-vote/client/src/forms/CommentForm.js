@@ -8,11 +8,13 @@ const initInputs = {
 
 export default function CommentForm(props) {
 	const [inputs, setInputs] = useState(initInputs);
-	const { commentOnIssue, getComments, issueId, newComment } =
+	const { commentOnIssue, getComments, newComment } =
 		useContext(IssueContext);
-	const { _id, user } = useContext(UserContext);
+	const { user } = useContext(UserContext);
 	const { content } = inputs;
 	const [comments, setComments] = useState([]);
+	const { _id} = props
+	console.log(_id)
 
 	function handleChange(e) {
 		const { name, value } = e.target;
@@ -24,16 +26,16 @@ export default function CommentForm(props) {
 
 	function handleSubmit(e) {
 		e.preventDefault();
-		commentOnIssue(props.issueId, user._id, {
+		commentOnIssue(_id, user._id, {
 			...inputs,
-			issue: props.issueId,
+			issue: _id,
 		}).then((commentOnIssue) =>
 			setComments((prevComments) => {
 				return [...prevComments, commentOnIssue];
 			})
 		);
-		getComments(_id).then((issueComment) => setComments(issueComment));
 		setInputs(initInputs);
+		getComments(_id).then((issueComment) => setComments(issueComment));
 	}
 
 	return (

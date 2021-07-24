@@ -8,7 +8,7 @@ import { IssueContext } from '../context/IssueProvider.js'
 function Profile(){
 
   const { user: { username } } = useContext(UserContext)
-  const {addIssue, getUserPosts, userIssues, deleteIssue, getAuthors, issues} = useContext(IssueContext)
+  const {addIssue, getUserPosts, userIssues, deleteIssue, getAuthors} = useContext(IssueContext)
 
   useEffect(() => {
     getUserPosts()
@@ -21,7 +21,7 @@ function Profile(){
       <h3>Post your Thoughts here</h3>
       <PostForm addIssue={addIssue} />
       <h3>Your Posts</h3>
-      <PostList issues={userIssues} deleteIssue={deleteIssue}/>
+      <PostList issues={userIssues} deleteIssue={deleteIssue} />
     </div>
   )
 }

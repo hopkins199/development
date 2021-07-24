@@ -4,23 +4,27 @@ import { IssueContext } from "../context/IssueProvider";
 import CommentList from "./CommentList";
 
 export default function Post(props) {
-	const { title, content, _id } = props;
+	const { title, content, _id } = props
+	// const {_id} = issue
+	// console.log("id:", _id)
 	const { user } = useContext(UserContext);
-	const { deleteIssue, authors, getComments, issueId, upVote } =useContext(IssueContext);
+	const { deleteIssue, authors, getComments, upVote }= useContext(IssueContext);
+	
 	const [toggle, setToggle] = useState(false);
 	const [comments, setComments] = useState([]);
-
+	
 	function toggleComment() {
-		setToggle((prev) => !prev);
 		getComments(_id).then((issueComments) => setComments(issueComments));
+		setToggle((prev) => !prev);
 	}
-
+	// console.log("issueId",issueId)
+	
 	function handleDelete() {
 		deleteIssue(_id);
 	}
 
 	function thumbsUp(){
-		upVote(issueId)
+		upVote(_id)
 	}
 
 	return (

@@ -4,12 +4,13 @@ import CommentForm from '../forms/CommentForm'
 // import { IssueContext } from '../context/IssueProvider'
 
 export default function CommentList(props){
-    const { comments } = props
+    const { comments, _id } = props
+    // console.log("id:", _id)
 
 
     return(
         <div style={{backgroundColor: 'transparent'}}>
-            { comments.length === 0 ? <CommentForm issueId={props.issueId} /> : comments.map(comment => <Comment {...comment} issueId={props.issueId} key={comment._id} />)}
+            { comments.length === 0 ? <CommentForm _id={_id} /> : comments.map(comment => <Comment {...comment} _id={_id} key={comment._id} />)}
         </div>
     )
 }

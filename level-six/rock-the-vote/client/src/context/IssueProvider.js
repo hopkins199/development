@@ -20,8 +20,7 @@ export default function IssueProvider(props){
 
     const initState = {  
         issues: [],
-        userIssues: [],
-        user: ''
+        userIssues: []
     }
 
 
@@ -100,7 +99,6 @@ export default function IssueProvider(props){
     function getAuthors(){
         issueAxios.get("/api/issues/authors/")
         .then(res =>{ 
-            console.log(res.data)
             setAuthors(res.data)
         })
         .catch(err => console.log(err))

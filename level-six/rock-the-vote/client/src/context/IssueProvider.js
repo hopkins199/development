@@ -83,7 +83,7 @@ export default function IssueProvider(props){
     }
 
     function commentOnIssue(issueId, _id, newComment){
-        return issueAxios.post(`/api/issues/comments/${issueId}`)
+        return issueAxios.post(`/api/issues/comments/${issueId}`, newComment)
             .then((res) => res.data)
     }
     
@@ -92,7 +92,10 @@ export default function IssueProvider(props){
             .then((res) => res.data)
     }
 
-
+    function upVote(issueId){
+        issueAxios.put(`/api/issues/${issueId}`)
+        .then(res => res.data)
+    }
 
     function getAuthors(){
         issueAxios.get("/api/issues/authors/")
@@ -104,7 +107,7 @@ export default function IssueProvider(props){
     }
 
     return (
-        <IssueContext.Provider value={{...issueState, getAllPosts, getUserPosts, addIssue, deleteIssue, commentOnIssue, getComments,  authors, getAuthors}}>
+        <IssueContext.Provider value={{...issueState, getAllPosts, getUserPosts, addIssue, deleteIssue, commentOnIssue, getComments,  authors, getAuthors, upVote}}>
             {props.children}
         </IssueContext.Provider>
     )

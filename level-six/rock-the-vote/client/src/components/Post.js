@@ -6,41 +6,46 @@ import CommentList from "./CommentList";
 export default function Post(props) {
 	const { title, content, _id } = props;
 	const { user } = useContext(UserContext);
-	const { deleteIssue, authors, getComments, issueId } = useContext(IssueContext);
+	const { deleteIssue, authors, getComments, issueId, upVote } =useContext(IssueContext);
 	const [toggle, setToggle] = useState(false);
-	const [comments, setComments] = useState([])
+	const [comments, setComments] = useState([]);
 
 	function toggleComment() {
 		setToggle((prev) => !prev);
-		getComments(_id).then((issueComments) => setComments(issueComments))
+		getComments(_id).then((issueComments) => setComments(issueComments));
 	}
 
 	function handleDelete() {
 		deleteIssue(_id);
 	}
 
-	// useEffect(() => {
-	// }, []);
+	function thumbsUp(){
+		upVote(issueId)
+	}
 
 	return (
 		<div className="issue">
 			<h1 style={{ fontSize: "1.2rem" }}>{title}</h1>
 			<p style={{ textTransform: "capitalize" }}>
 				<small style={{ backgroundColor: "transparent" }}>
-					Author:{" "}
+					Posted By:{" "}
 					{authors.find((author) => author._id === props.user)
 						? authors.find((author) => author._id === props.user).username
 						: null}{" "}
 				</small>
 			</p>
 			<h3 style={{ fontSize: "1.1rem" }}>{content}</h3>
+			<div className="vote">
+				<p onClick={thumbsUp}>👍</p>
+				<p>👎</p>
+			</div>
 			<div className="post-actions">
 				{!toggle ? (
 					<p onClick={toggleComment}>Show Comments</p>
 				) : (
 					<>
 						<p onClick={toggleComment}>Hide Comments</p>
-						<CommentList comments={comments}/>
+						<CommentList issueId={_id} comments={comments} />
 					</>
 				)}
 				{props.user === user._id ? (

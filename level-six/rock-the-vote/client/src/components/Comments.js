@@ -1,4 +1,4 @@
-import React from 'react'
+import React, {useContext} from 'react'
 import CommentForm from '../forms/CommentForm'
 // import { IssueContext } from '../context/IssueProvider'
 
@@ -6,6 +6,7 @@ import CommentForm from '../forms/CommentForm'
 export default function Comments (props) {
 
     const { content } = props
+    // const { authors } = useContext(IssueContext)
     // const [comment, SetComment] = useState() 
 
     return(

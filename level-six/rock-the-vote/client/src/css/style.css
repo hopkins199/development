@@ -176,7 +176,7 @@ p {
 
 .post-actions > p {
 	margin-right: 20px;
-	margin-top: 10px;
+	margin-top: 0px;
 	font-size: 13px;
 }
 .comment-btn {
@@ -211,4 +211,19 @@ p {
   background-color: transparent;
   display: flex;
   flex-direction: column;
+}
+.vote {
+	display: flex;
+	background-color: transparent;
+	margin-top: 10px;
+	margin-bottom: 0;
+}
+.vote > p {
+	margin-right: 20px;
+	font-size: 25px;
+}
+.vote > p:hover {
+	cursor: pointer;
+	box-shadow: 3px 3px 3px lightgray;
+	background-color: transparent;
 }

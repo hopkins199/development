@@ -4,7 +4,7 @@ const Comment = require("../models/comment.js")
 
 // works in postman
 commentRouter.post('/:issueId', (req, res, next) => {
-    req.body.author = req.user._id
+    req.body.user = req.user._id
     req.body.issue = req.params.issueId
     console.log(req.body)
     const newComment = new Comment(req.body)
@@ -17,7 +17,7 @@ commentRouter.post('/:issueId', (req, res, next) => {
     })
 })
 
-// untested mmkay
+// workie jerkie
 commentRouter.get('/:issueId', (req, res, next) => {
     Comment.find({ issue: req.params.issueId})
         .populate("user", "username")

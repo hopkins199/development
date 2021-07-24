@@ -1,5 +1,6 @@
 import React, { useState, useContext } from "react";
-import { IssueContext } from '../context/IssueProvider'
+import { IssueContext } from "../context/IssueProvider";
+import { UserContext } from "../context/UserProvider";
 
 const initInputs = {
 	content: "",
@@ -7,9 +8,11 @@ const initInputs = {
 
 export default function CommentForm(props) {
 	const [inputs, setInputs] = useState(initInputs);
-	const { commentOnIssue, _id, user } = useContext(IssueContext)
+	const { commentOnIssue, getComments, issueId, newComment } =
+		useContext(IssueContext);
+	const { _id, user } = useContext(UserContext);
 	const { content } = inputs;
-  const [comments, setComments] = useState([])
+	const [comments, setComments] = useState([]);
 
 	function handleChange(e) {
 		const { name, value } = e.target;
@@ -21,13 +24,21 @@ export default function CommentForm(props) {
 
 	function handleSubmit(e) {
 		e.preventDefault();
-		commentOnIssue(inputs, _id, user).then((newComment) => setComments(newComment))
-		setInputs(initInputs)
+		commentOnIssue(props.issueId, user._id, {
+			...inputs,
+			issue: props.issueId,
+		}).then((commentOnIssue) =>
+			setComments((prevComments) => {
+				return [...prevComments, commentOnIssue];
+			})
+		);
+		getComments(_id).then((issueComment) => setComments(issueComment));
+		setInputs(initInputs);
 	}
 
 	return (
-		<div className='comment'>
-			<form onSubmit={handleSubmit} className="comment-form" >
+		<div className="comment">
+			<form onSubmit={handleSubmit} className="comment-form">
 				<textarea
 					rows="2"
 					cols="80"

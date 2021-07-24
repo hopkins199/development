@@ -10,16 +10,6 @@ const issueSchema = new Schema({
         type: String,
         required: true
     },
-    votes: {
-        upvote: [{
-            type: Schema.Types.ObjectId,
-            ref: 'User'
-        }],
-        downvote: [{
-            type: Schema.Types.ObjectId,
-            ref: 'User'
-        }]
-    },
     comment: {
         type: Array,
         required: false,
@@ -28,6 +18,17 @@ const issueSchema = new Schema({
         type: Schema.Types.ObjectId,
         ref: 'User',
         required: true
+    },
+    likes: {
+        type: Number
+        
+    },
+    upVoters: {
+        type: Number
+        
+    },
+    downVoters: {
+        type: Number
     }
 })
 

@@ -92,8 +92,13 @@ export default function IssueProvider(props){
     }
 
     function upVote(issueId){
-        issueAxios.put(`/api/issues/${issueId}`)
+        return issueAxios.put(`/api/issues/upVote/${issueId}`)
         .then(res => res.data)
+    }
+
+    function downVote(issueId){
+        return issueAxios.put(`/api/issues/downVote/${issueId}`)
+            .then(res => res.data)
     }
 
     function getAuthors(){
@@ -105,7 +110,7 @@ export default function IssueProvider(props){
     }
 
     return (
-        <IssueContext.Provider value={{...issueState, getAllPosts, getUserPosts, addIssue, deleteIssue, commentOnIssue, getComments,  authors, getAuthors, upVote}}>
+        <IssueContext.Provider value={{...issueState, getAllPosts, getUserPosts, addIssue, deleteIssue, commentOnIssue, getComments,  authors, getAuthors, upVote, downVote}}>
             {props.children}
         </IssueContext.Provider>
     )

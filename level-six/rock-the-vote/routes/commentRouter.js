@@ -2,7 +2,7 @@ const express = require('express')
 const commentRouter = express.Router()
 const Comment = require("../models/comment.js")
 
-// works in postman
+// workie jerkie
 commentRouter.post('/:issueId', (req, res, next) => {
     req.body.user = req.user._id
     req.body.issue = req.params.issueId

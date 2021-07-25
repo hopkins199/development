@@ -1,30 +1,41 @@
-import React, { useContext, useState, useEffect } from "react";
+import React, { useContext, useState } from "react";
 import { UserContext } from "../context/UserProvider";
 import { IssueContext } from "../context/IssueProvider";
 import CommentList from "./CommentList";
 
 export default function Post(props) {
-	const { title, content, _id } = props
+	const { title, content, _id } = props;
 	// const {_id} = issue
 	// console.log("id:", _id)
 	const { user } = useContext(UserContext);
-	const { deleteIssue, authors, getComments, upVote }= useContext(IssueContext);
-	
+	const { deleteIssue, authors, getComments, upVote, downVote } =
+		useContext(IssueContext);
+
 	const [toggle, setToggle] = useState(false);
 	const [comments, setComments] = useState([]);
-	
+	const [upVotes, setUpVotes] = useState([]);
+	const [downVotes, setDownVotes] = useState();
+
 	function toggleComment() {
 		getComments(_id).then((issueComments) => setComments(issueComments));
 		setToggle((prev) => !prev);
 	}
 	// console.log("issueId",issueId)
-	
+
 	function handleDelete() {
 		deleteIssue(_id);
 	}
 
-	function thumbsUp(){
-		upVote(_id)
+	function thumbsUp() {
+		upVote(_id).then((upDoots) => setUpVotes(upDoots) + 1);
+		return String(upVotes);
+	}
+
+	console.log(typeof upVotes);
+
+	function thumbsDown() {
+		downVote(_id).then((downDoots) => setDownVotes(downDoots) + 1);
+		return downVotes;
 	}
 
 	return (
@@ -40,8 +51,8 @@ export default function Post(props) {
 			</p>
 			<h3 style={{ fontSize: "1.1rem" }}>{content}</h3>
 			<div className="vote">
-				<p onClick={thumbsUp}>👍</p>
-				<p>👎</p>
+				<p onClick={thumbsUp}>👍 </p>
+				<p onClick={thumbsDown}>👎 </p>
 			</div>
 			<div className="post-actions">
 				{!toggle ? (
@@ -49,7 +60,7 @@ export default function Post(props) {
 				) : (
 					<>
 						<p onClick={toggleComment}>Hide Comments</p>
-						<CommentList issueId={_id} comments={comments} />
+						<CommentList _id={_id} comments={comments} />
 					</>
 				)}
 				{props.user === user._id ? (

@@ -19,15 +19,11 @@ const issueSchema = new Schema({
         ref: 'User',
         required: true
     },
-    likes: {
+    upVote: {
         type: Number
         
     },
-    upVoters: {
-        type: Number
-        
-    },
-    downVoters: {
+    downVote: {
         type: Number
     }
 })

@@ -6,8 +6,7 @@ import { IssueContext } from "../context/IssueProvider.js";
 export default function Public(props) {
 	const { getAllPosts, issues, getComments, comments, getAuthors } =
 		useContext(IssueContext);
-	//const {getAuthors} = useContext(UserContext)
-	// console.log(issues)
+
 	useEffect(() => {
 		getAllPosts();
 		getAuthors();

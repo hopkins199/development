@@ -4,38 +4,32 @@ import { IssueContext } from "../context/IssueProvider";
 import CommentList from "./CommentList";
 
 export default function Post(props) {
-	const { title, content, _id } = props;
+	const { title, content, _id, upVote, downVote } = props;
 	// const {_id} = issue
 	// console.log("id:", _id)
 	const { user } = useContext(UserContext);
-	const { deleteIssue, authors, getComments, upVote, downVote } =
+	const { deleteIssue, authors, getComments, clickDownVote, clickUpVote} =
 		useContext(IssueContext);
 
 	const [toggle, setToggle] = useState(false);
 	const [comments, setComments] = useState([]);
-	const [upVotes, setUpVotes] = useState([]);
-	const [downVotes, setDownVotes] = useState();
+
 
 	function toggleComment() {
 		getComments(_id).then((issueComments) => setComments(issueComments));
 		setToggle((prev) => !prev);
 	}
-	// console.log("issueId",issueId)
 
 	function handleDelete() {
 		deleteIssue(_id);
 	}
 
 	function thumbsUp() {
-		upVote(_id).then((upDoots) => setUpVotes(upDoots) + 1);
-		return String(upVotes);
+		clickUpVote(_id);
 	}
 
-	console.log(typeof upVotes);
-
 	function thumbsDown() {
-		downVote(_id).then((downDoots) => setDownVotes(downDoots) + 1);
-		return downVotes;
+		clickDownVote(_id);
 	}
 
 	return (
@@ -51,8 +45,8 @@ export default function Post(props) {
 			</p>
 			<h3 style={{ fontSize: "1.1rem" }}>{content}</h3>
 			<div className="vote">
-				<p onClick={thumbsUp}>👍 </p>
-				<p onClick={thumbsDown}>👎 </p>
+				<p onClick={thumbsUp}>👍 {upVote}</p>
+				<p onClick={thumbsDown}>👎 {downVote}</p>
 			</div>
 			<div className="post-actions">
 				{!toggle ? (

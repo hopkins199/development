@@ -71,55 +71,49 @@ issueRouter.put("/:issueId", (req, res, next) => {
 });
 
 // i think worked in postman
-issueRouter.put("/upVote/:issueId", (req, res, next) => {
-	Issue.findOneAndUpdate(
-		{ _id: req.params.issueId },
-		{ $inc: { upVote: 1 } },
-		{ new: true },
-		(err, updatedIssue) => {
-			if (err) {
-				res.status(500);
-				return next(err);
-			}
-
-			// if (updatedIssue.upVote.includes( req.user._id)) {
-            //     Issue.findOneAndUpdate(
-            //         { _id: req.params.issueId },
-            //         { $inc: { likes: -1 } },
-            //         { new: true },
-            //         (err, updatedIssue) => {
-            //             if (err) {
-            //                 res.status(500);
-            //                 return next(err);
-            //             }
-            //             return next(new Error("You already liked this issue"))
-            //         }
-            //     );
-
-			// 	;
-			// }
-
-
-            //add the req.user._id to upVoters array property of your issue
-			return res.status(201).send(updatedIssue);
+issueRouter.put("/upVote/:issueId", async (req, res, next) => {
+	try {
+		const issue = await Issue.findOne({_id: req.params.issueId})
+		if (issue.votedUser.includes(req.user._id)){
+			res.status(403)
+			throw new Error('You can only vote once per issue!')
 		}
-	);
-});
+		const updated = await Issue.findOneAndUpdate(
+			{_id: req.params.issueId},
+			{
+				$inc: { upVote: +1 },
+				$push: { votedUser: req.user._id }
+			},
+			{ new: true }
+		)
+		return res.status(200).send(updated)
+	} catch (err) {
+		res.status(500)
+		return next(err)
+	}
+})
 
 // i think worked in postman
-issueRouter.put("/downVote/:issueId", (req, res, next) => {
-	Issue.findOneAndUpdate(
-		{ _id: req.params.issueId },
-		{ $inc: { downVote: 1 } },
-		{ new: true },
-		(err, updatedIssue) => {
-			if (err) {
-				res.status(500);
-				return next(err);
-			}
-			return res.status(201).send(updatedIssue);
+issueRouter.put("/downVote/:issueId", async (req, res, next) => {
+	try {
+		const issue = await Issue.findOne({_id: req.params.issueId})
+		if (issue.votedUser.includes(req.user._id)){
+			res.status(403)
+			throw new Error('You can only vote once per issue!')
 		}
-	);
-});
+		const updated = await Issue.findOneAndUpdate(
+			{_id: req.params.issueId},
+			{
+				$inc: { downVote: +1 },
+				$push: { votedUser: req.user._id }
+			},
+			{ new: true }
+		)
+		return res.status(200).send(updated)
+	} catch (err) {
+		res.status(500)
+		return next(err)
+	}
+})
 
 module.exports = issueRouter;
